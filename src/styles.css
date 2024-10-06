@@ -1,0 +1,125 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #f7f8fa, #e2e2e2);
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+/* Container */
+.container {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+/* Header */
+h1 {
+    font-size: 2.5rem;
+    color: #ff5722; /* Vibrant orange */
+    margin-bottom: 20px;
+}
+
+/* Question Styling */
+.question {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #3f51b5; /* Indigo */
+}
+
+/* Answer Options */
+.answers {
+    list-style-type: none;
+    padding: 0;
+}
+
+.answers li {
+    background-color: #ffeb3b; /* Bright Yellow */
+    border: 2px solid #ffc107; /* Amber */
+    border-radius: 10px;
+    margin: 10px 0;
+    padding: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.answers li:hover {
+    background-color: #ffd600; /* Deep Yellow */
+    transform: scale(1.05);
+}
+
+/* Message Styling */
+.message {
+    font-size: 1.2rem;
+    margin: 20px 0;
+    color: #4caf50; /* Green */
+}
+
+/* Players List */
+.players {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.players h2 {
+    color: #2196f3; /* Blue */
+    margin-bottom: 10px;
+}
+
+.players ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.players ul li {
+    background-color: #e0f7fa; /* Light Cyan */
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+/* QR Code Component */
+.qr-code {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .question {
+        font-size: 1.2rem;
+    }
+
+    .answers li {
+        padding: 12px;
+        font-size: 1rem;
+    }
+
+    .message {
+        font-size: 1rem;
+    }
+}
